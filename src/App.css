@@ -1,0 +1,197 @@
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-calendars/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-schedule/styles/material.css";
+.bg-body{
+  background-size: cover;
+  color: white;
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.user{
+  font-size: x-large;
+}
+.nav-ul{
+  background-color: #fff;
+  color: black;
+}
+.view{
+  background-color: lightyellow;
+  border-bottom: 1px solid #151515;
+  padding: 10px;
+}
+.edit{
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  background-color: #e9f5fd;
+}
+.slot{
+  width:100%;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 0px;
+  padding: 8px;
+  outline: none;
+  background-color: #e9f5fd;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.bg-footer{
+  background-color: rgb(13, 13, 13);
+}
+
+/* facebook */
+.btn-facbook:hover{
+  background-color: #3e6278; 
+}
+
+/* twiter */
+.btn-twiter:hover{
+  background-color: #3fbece; 
+}
+
+/* instagram */
+.btn-insta:hover{
+  background-color: #C13584; 
+}
+
+/* Google */
+.btn-google:hover{
+  background-color: #FBBC05; 
+}
+
+.home-body{
+  background-color: rgba(255, 255, 255, 0.6); /* Dark blue with transparency */
+  color: rgb(0, 0, 0); /* Ensures text color is white for visibility */
+  animation: fadeInUp 1s ease-out;
+  border-radius: 10px;
+}
+.contain{
+  display: flex;
+  color: white;
+}
+
+main{
+  width: 100%;
+  /* padding: 20px; */
+}
+.sidebar {
+  background-color: #151515;
+  color: white;
+  width: 300px;
+  /* position: sticky;
+  top: 0;  */
+  transition: all 0.3s;
+  height: 100vh; /* Full height of viewport */
+}
+.top_section{
+  display: flex;
+  align-items: centers;
+  padding: 20px 15px;
+}
+
+.logo {
+  font-size: 20px; /* Adjusted font size */
+}
+
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.link {
+  display: flex;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  gap: 15px;
+  transition: all 0.3s;
+}
+
+.link:hover {
+  background-color: #0098f7;
+  color: #151515;
+  transition: all 0.3s;
+}
+
+.active {
+  background-color: #0098f7;
+  color: #151515;
+}
+
+.icon, .link_text {
+  font-size: 17px;
+}
+
+.no-outline-btn {
+  border: none;
+  outline: none;
+  background-color: transparent; /* Optional: if you want no background */
+  padding: 5; /* Optional: to remove padding if needed */
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.nav-btton:hover {
+  border: none;
+  outline: none;
+  color: #05b8ff; /* Change this to your desired hover color */
+}
+
+.Sline{
+  color: #cfcfcf;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-top: 1%;
+  
+}
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.sidebar-header {
+  padding: 15px;
+  background: #f8f9fa;
+}
+
+.components {
+  padding: 20px 0;
+}
+
+.nav-link {
+  color: #333;
+}
+
+.nav-link:hover {
+  background-color: #e9ecef;
+}
+
+.text-room{
+  border: none;
+}
