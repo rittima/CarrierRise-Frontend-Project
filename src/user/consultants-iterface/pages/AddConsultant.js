@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import consultantContext from "../../consultants-iterface/context/api/ConsultantContext";
 import { useNavigate } from 'react-router-dom';
 
-const AddConsultant = (props) => {
+const AddConsultant = () => {
   const {addConsultant,consultants} = useContext(consultantContext) ;
   const [consultant, setConsultant] = useState({name:"",email:"",company:"",role:""})
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const AddConsultant = (props) => {
   const handleClick=(e)=>{
     e.preventDefault();
     if (!consultant.name || !consultant.email || !consultant.company || !consultant.role) {
-      alert("All fields are required!","warning")
+      alert("All fields are required!")
       return;
     }
     // Check if consultant already exists
@@ -28,7 +28,7 @@ const AddConsultant = (props) => {
     );
 
     if (exists) {
-      alert("Consultant with this email and company already exists! You can only edit now","info");
+      alert("Consultant with this email and company already exists! You can only edit now");
       return;
     }
     addConsultant(consultant.name, consultant.email, consultant.company, consultant.role);

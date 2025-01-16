@@ -14,7 +14,7 @@ const Slide = () => {
               Sessions should be less than or equal to 1 hour.
             </p>
             <Link to="/schedule" className="btn btn-dark btn-lg" style={{padding:'10px'}}>
-              <b>Create your Meeting </b>
+              <b>Create your Schedule </b>
             </Link> 
           </div>
         </div>
