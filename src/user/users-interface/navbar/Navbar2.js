@@ -1,5 +1,10 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { BsDatabaseAdd, BsMenuButton } from 'react-icons/bs';
+import { FaBusinessTime, FaTh, FaUserTie } from 'react-icons/fa';
+import { HiOutlineBars3 } from 'react-icons/hi2';
+import { IoPersonCircle } from 'react-icons/io5';
+import { TbLogout } from 'react-icons/tb';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 const Navbar2 = () => {
         const navigate = useNavigate();
@@ -26,8 +31,8 @@ const Navbar2 = () => {
                 icon: <BsDatabaseAdd />
             },
             {
-                path: "/slot",
-                name: "Add your Slot",
+                path: "/consultant-list",
+                name: "Consultant List",
                 icon: <FaBusinessTime />
             },
             {

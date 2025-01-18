@@ -2,10 +2,19 @@
 import bgImg from '../../image/background.jpg'
 import { useNavigate } from 'react-router-dom';
 import Footer from '../navbar/Footer';
+import { useEffect } from 'react';
 
 const Home = () => {
   const navigate=useNavigate();
   const name = localStorage.getItem('username');
+
+  useEffect(()=>{
+      const jwtToken=localStorage.getItem('token');
+      if (!jwtToken) {
+        navigate("/",{replace:false});
+      }
+       
+    },[navigate])
 
   const handleClick=() =>{
     navigate("/dashboard")
@@ -19,6 +28,7 @@ const Home = () => {
         <div className="container row" style={{paddingTop:'5%'}}>
           <div className='col-sm-7 ' style={{padding:"5%"}}>
             <h1>Hello {name ? name:'Guest'} !
+            {/* <h1>Hello {name} ! */}
               <p className='my-3'>Welcome to Carrierise</p>
             </h1>
           </div>
@@ -39,3 +49,6 @@ const Home = () => {
 }
 
 export default Home
+
+
+

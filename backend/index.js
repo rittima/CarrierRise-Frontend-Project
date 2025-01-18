@@ -12,7 +12,8 @@ app.use(express.json())
 //available route
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/consultant',require('./routes/consultant'))
-app.use('/api/schedule',require('./routes/schedule'))
+app.use('/api/schedule', require('./routes/schedule'));
+app.use('/api/mentees', require('./routes/mentees'));
 
 app.listen(port, () => { 
   console.log(`Example app listening on port at http://localhost:${port}`)

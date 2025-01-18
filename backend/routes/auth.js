@@ -14,7 +14,7 @@ router.post("/register",
     body("name", "Enter a valid name").isLength({ min: 5 }),
     body("email", "Enter a valid email").isEmail(),
     body("password", "Enter a valid password").isLength({ min: 3 }),
-    // body("role", "Enter a valid role").exists(),
+    body("role", "Enter a valid role").exists(),
   ],async (req, res) => {
     let success = false;
 

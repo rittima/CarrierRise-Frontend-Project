@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@syncfusion/ej2-react-navigations": "^28.1.39",
     "@syncfusion/ej2-react-schedule": "^28.1.39",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@zegocloud/zego-uikit-prebuilt": "^2.14.0",
+    "axios": "^1.7.9",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.3",
     "concurrently": "^9.0.1",
