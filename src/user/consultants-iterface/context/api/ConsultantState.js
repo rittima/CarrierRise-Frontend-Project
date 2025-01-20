@@ -86,9 +86,6 @@ const ConsultantState = (props) => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-    //   const json= await response.json();
-    //   console.log(json);
-
       let newConsultant=JSON.parse( JSON.stringify(consultants))
       //logic to edit
       for (let index = 0; index < newConsultant.length; index++) {
@@ -104,34 +101,6 @@ const ConsultantState = (props) => {
       setConsultant(newConsultant)
       
     }
-
-  // //ADD slots
-  // const addSlot = async (start, end, isSlotAvailable) => {
-  //   //api call
-  //   try{
-  //     const response = await fetch(`http://localhost:5000/api/session/addSlots/6703abc4b745eba9c4e6d97f`, {
-  //     method: "POST",
-  //     body: JSON.stringify({ start, end, isSlotAvailable }),
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       // "auth-token":localStorage.getItem('token')
-  //       "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjZmNTZkOGQ2OTM4MWRjNTk2MWUxYWRmIn0sImlhdCI6MTcyODI5MzAzM30._TUhpnzMtOYZBQ2UbYC3gjAlMdvCMncbe_muLnhnbQk"
-  //     },
-  //   });
-  //   const data = await response.json();
-
-  //   if (!response.ok) {
-  //     throw new Error(data.message || 'Failed to add slot');
-  //   }
-
-  //   // Update state with the newly added slot
-  //   setConsultant(prevConsultants => [...prevConsultants, data]);
-  // } catch (error) {
-  //   console.error('Error adding slot:', error);
-  //   throw error; // Rethrow to handle it in your component
-  // }
-  // };
-
 
   return (
     <div>
