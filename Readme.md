@@ -89,7 +89,7 @@ CarrierRise-Frontend-Project/
 ### 1. Clone the Repository
 
 ```
-git clone https://github.com/Rknilkant/CarrierRise-Frontend-Project.git
+git clone https://github.com/rittima/CarrierRise-Frontend-Project.git
 cd CarrierRise-Frontend-Project
 ```
 
